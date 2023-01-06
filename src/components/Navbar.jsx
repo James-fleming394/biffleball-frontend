@@ -24,7 +24,17 @@ const Navbar = ({ authenticated, user, handleLogout }) => {
 
     return (
         <div>
+            <header>
+            <Link to="/">
+                <div className="logo">
+                    <img className="header-logo"
+                    src="/img/Biffle-Small-White.png"
+                    alt="welcome logo"
+                    />
+                </div>
+            </Link>
             {authenticated && user ? authenticatedOptions : publicOptions}
+        </header>
         </div>
     )
 
