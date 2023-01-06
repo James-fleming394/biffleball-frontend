@@ -1,1 +1,10 @@
+/* Navbar */
 
+.nav {
+    max-height: 4em;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
