@@ -27,26 +27,6 @@ const Navbar = () => {
 
     return (
         <div>
-            <header>
-            <Link to="/">
-                <div className="logo">
-                    <img className="header-logo" src="/img/Biffle-Small-White.png" alt="welcome logo"/>
-                    <nav1>
-                        <ul className="links">
-                            <li><Link className="link" to="/standings">Standings</Link></li>
-                            <li><Link className="link" to="/stats">Stats</Link></li>
-                            <li><Link className="link" to="/submit-pick">Submit a Pick</Link></li>
-                            <li><Link className="link" to="/rules">Rules</Link></li>
-                        </ul>
-                    </nav1>
-                    <nav2>
-                        <ul className="links2">
-                        <li><Link className="link" to="/login">Login</Link></li>
-                        </ul>
-                    </nav2>
-                </div>
-            </Link>
-            </header>
         </div>
     )
 
