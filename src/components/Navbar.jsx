@@ -28,13 +28,13 @@ const Navbar = () => {
     return (
         <>
         <div className="top-bar">
-            <span><img className='BB-logo' src="/img/b-solid.png" alt="logo" /><img className='BB-logo2' src="/img/b-solid.png" alt="logo" /></span>
-            <ul>
-                <li><a href="https://twitter.com/Biffle_Ball"><img src="/img/twitter.png" alt="twitter"/></a></li>
-                <li><a href="https://discord.gg/Vwz5yffp"><img src="/img/discord.png" alt="discord" /></a></li>
-                <li><a href="mailto:register@biffleball.com"><img src="/img/email.png" alt="email" /></a></li>
-                <Link>Register</Link>
-                <Link>Login</Link>
+            <span><img className='top' src="/img/b-solid.png" alt="logo" /><img className='top' src="/img/b-solid.png" alt="logo" /></span>
+            <ul className="top-ul">
+                <li className="top-li"><a href="https://twitter.com/Biffle_Ball"><img className="top" src="/img/twitter.png" alt="twitter"/></a></li>
+                <li className="top-li-discord"><a href="https://discord.gg/Vwz5yffp"><img className="top" src="/img/discord.png" alt="discord" /></a></li>
+                <li className="top-li"><a href="mailto:register@biffleball.com"><img className="top" src="/img/email.png" alt="email" /></a></li>
+                <button className="top-link"><Link  to="/register">Register</Link></button>
+                <button className="top-link"><Link  to="/login">Login</Link></button>
             </ul>
         </div>
         <nav>

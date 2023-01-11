@@ -9,3 +9,49 @@
     background-color: rgb(79, 77, 77);
 }
 
+a {
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: whitesmoke;
+}
+
+.top-link {
+    color: white;
+    background-color: rgb(79, 77, 77);
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.top-ul {
+    list-style: none;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.top-li {
+    margin: 0px 5px;
+    margin-top: 8px;
+    padding-right: 10px;
+    background-color: whitesmoke;
+}
+
+.top-li-discord {
+    margin: 0px 5px;
+    padding-top: 13px;
+    padding-right: 10px;
+    background-color: whitesmoke;
+}
+
+.top {
+    width: 25px;
+    background-color: whitesmoke;
+}
+
+
