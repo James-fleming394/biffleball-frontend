@@ -26,7 +26,13 @@ const Navbar = () => {
     // )
 
     return (
-        <div>
+        <div className="top-bar">
+            <span><img className='BB-logo' src="/img/b-solid.png" /><img className='BB-logo2' src="/img/b-solid.png" /></span>
+            <ul>
+                <li><a href="https://twitter.com/Biffle_Ball"><img src="/img/twitter.png"/></a></li>
+                <li><a href="https://discord.gg/Vwz5yffp"><img src="/img/discord.png"/></a></li>
+                <li><a href="mailto:register@biffleball.com"><img src="/img/email.png"/></a></li>
+            </ul>
         </div>
     )
 
