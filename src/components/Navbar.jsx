@@ -38,19 +38,12 @@ const Navbar = () => {
             </ul>
         </div>
         <nav>
-            <div className="logo">
-                <Link to='/'>
-                <img src="/img/Biffle-small-black.png" alt="logo" />
-                </Link>
-            </div>
-            <div className="toggle">
-                <a href=""><img src="/img/bars-solid.png" alt="menu"/></a>
-            </div>
             <ul className="menu">
-                <li><Link to="/standings">Standings</Link></li>
-                <li><Link to="/stats">Stats</Link></li>
-                <li><Link to="/submit-pick">Submit Pick</Link></li>
-                <li><Link to="/rules">Rules</Link></li>
+                <li className="menu-list"><Link to="/">Home</Link></li>
+                <li className="menu-list"><Link to="/standings">Standings</Link></li>
+                <li className="menu-list"><Link to="/stats">Stats</Link></li>
+                <li className="menu-list"><Link to="/submit-pick">Submit Pick</Link></li>
+                <li className="menu-list"><Link to="/rules">Rules</Link></li>
             </ul>
         </nav>
             </>
