@@ -1,29 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 const Navbar = () => {
-    // let authenticatedOptions
-    // if (user) {
-    //     authenticatedOptions = (
-    //         <nav>
-    //             <Link className="link" to="/standings">Standings</Link>
-    //             <Link className="link" to="/submit-pick">Submit Pick</Link>
-    //             <Link className="link" to="/stats">Advanced Stats</Link>
-    //             <Link className="link" to="/profile">Profile</Link>
-    //             <Link className="link" onClick={handleLogout} to="/">Sign Out</Link>
-    //         </nav>
-    //     )
-    // }
+    let navigate = useNavigate();
 
-    // const publicOptions = (
-    //     <nav>
-    //         <Link className="link" to="/standings">Standings</Link>
-    //         <Link className="link" to="/submit-pick">Submit Pick</Link>
-    //         <Link className="link" to="/stats">Advanced Stats</Link>
-    //         <Link className="right-link" to="/register">Register</Link>
-    //         <Link className="right-link" to="/signin">Login</Link>
-    //     </nav>
-    // )
+    const loginClick = () => {
+        navigate("/login")
+    }
+
+    const registerClick = () => {
+        navigate("/register")
+    }
 
     return (
         <>
@@ -33,8 +21,8 @@ const Navbar = () => {
                 <li className="top-li"><a href="https://twitter.com/Biffle_Ball"><img className="top" src="/img/twitter.png" alt="twitter"/></a></li>
                 <li className="top-li-discord"><a href="https://discord.gg/Vwz5yffp"><img className="top" src="/img/discord.png" alt="discord" /></a></li>
                 <li className="top-li"><a href="mailto:register@biffleball.com"><img className="top" src="/img/email.png" alt="email" /></a></li>
-                <button className="top-link"><Link  to="/register">Register</Link></button>
-                <button className="top-link"><Link  to="/login">Login</Link></button>
+                <button className="top-link" type="button" onClick={registerClick}>Register</button>
+                <button className="top-link" type="button" onClick={loginClick} >Login</button>
             </ul>
         </div>
         <nav>

@@ -30,6 +30,13 @@ a {
     padding: 10px;
     margin: 5px;
     font-size: medium;
+    cursor: pointer;
+}
+
+.top-link:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
 .top-ul {
@@ -43,6 +50,7 @@ a {
     margin-top: 10px;
     padding-right: 10px;
     background-color: whitesmoke;
+    transition-duration: 0.4s;
 }
 
 .top-li-discord {
@@ -57,8 +65,15 @@ a {
     background-color: whitesmoke;
 }
 
+a {
+    background-color: #222;
+    cursor: pointer;
+}
+
 a:hover {
     color: black;
+    background-color: white;
+    transition-duration: 0.4s;
 }
 
 /* Bottom Navbar */
@@ -69,12 +84,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .menu {
     display: flex;
     align-items: center;
     background-color: #222;
+    font-size: larger;
 }
 
 .toggle {
