@@ -6,7 +6,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: rgb(79, 77, 77);
 }
 
 /* Top Navbar */
@@ -109,3 +108,126 @@ nav {
 
 /* Login Page */
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: burlywood;
+}
+
+.container .card {
+    height: 500px;
+    width: 800px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 15px 30px black;
+    border-radius: 10px;
+}
+
+.container .card .form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.container .card .left-side {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.left-side img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .card .right-side {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+}
+
+.main {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.register-link p {
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    padding: 5px;
+    background-color: white;
+}
+
+.reg-button-login {
+    padding: 5px;
+    color: black;
+    margin-left: 5px;
+    border: 2px solid black;
+}
+
+.hello {
+    margin-top: 60px;
+    text-align: center;
+    color: black;
+}
+
+.hello p {
+    margin-top: 5px;
+}
+
+.input_text {
+    position: relative;
+    margin-top: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    padding: 0 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.input_text p {
+    margin-right: 2px;
+}
+
+.btn {
+    margin-top: 15px;
+}
+
+.btn .login-button {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    background-color: rgb(244, 102, 102);
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+.btn .login-button:hover {
+    background-color: red;
+}

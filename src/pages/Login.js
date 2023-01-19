@@ -34,7 +34,7 @@ const Login = () => {
                     </div>
                     <div className="right-side">
                         <div className="register-link">
-                            <p>Not a member?<button className="reg-button-login" type="button" onClick={registerClick}>Register Now</button></p>
+                            <p><button className="reg-button-login" type="button" onClick={registerClick}>Register Now</button></p>
                         </div>
                         <div className="hello">
                             <h2>Sign In</h2>
@@ -42,7 +42,7 @@ const Login = () => {
                         </div>
 
                         <form onSubmit={handleSubmit}>
-                            <div className="login">
+                            <div className="input_text">
                                 <input 
                                 id="email"
                                 type="text"
@@ -52,7 +52,7 @@ const Login = () => {
                                 value={formState.email}
                                 />
                             </div>
-                            <div className="login">
+                            <div className="input_text">
                                 <input 
                                 id="password"
                                 type="text"
@@ -62,7 +62,9 @@ const Login = () => {
                                 value={formState.password}
                                 />
                             </div>
-                            <button type="submit">Login</button>
+                            <div className="btn">
+                            <button className="login-button" type="submit">Login</button>
+                            </div>
                         </form>
                     </div>
                 </div>
