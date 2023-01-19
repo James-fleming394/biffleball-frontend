@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import { CheckSession } from './services/auth.js';
-// import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import Login from './pages/Login';
 
 
 function App() {
@@ -35,7 +36,9 @@ function App() {
         user={user}
         handleLogout={handleLogout}
       />
-      
+      <Routes>
+        <Route path="/login" element={<Login />}></Route>
+      </Routes>
     </div>
   );
 }
