@@ -112,8 +112,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: burlywood;
+    min-height: 90vh;
+    background-color: #D8CFD0;
 }
 
 .container .card {
@@ -136,6 +136,8 @@ nav {
     height: 100%;
     background-color: white;
     overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .left-side img {
@@ -148,8 +150,8 @@ nav {
     width: 50%;
     height: 100%;
     background-color: white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 20px;
 }
 
@@ -176,6 +178,7 @@ nav {
     color: black;
     margin-left: 5px;
     border: 2px solid black;
+    cursor: pointer;
 }
 
 .hello {
