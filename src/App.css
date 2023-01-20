@@ -106,7 +106,7 @@ nav {
 }
 
 
-/* Login Page */
+/* Login + Register Page */
 
 .container {
     display: flex;
@@ -233,4 +233,21 @@ input[type="text"] {
 
 .btn .login-button:hover {
     background-color: red;
+}
+
+/* Home Page */
+
+.home {
+    background-color: #D8CFD0;
+}
+
+.logo-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blacklogo {
+    border: 5px solid white;
+    border-radius: 10px;
 }
