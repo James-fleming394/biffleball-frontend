@@ -245,9 +245,11 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 .blacklogo {
+    height: 200px;
     border: 5px solid white;
     border-radius: 10px;
 }

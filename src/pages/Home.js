@@ -1,4 +1,5 @@
 import React from "react";
+import TwitterContainer from "../components/TwitterContainer";
 
 const Home = () => {
     return (
@@ -9,6 +10,9 @@ const Home = () => {
             <div className="welcome">
                 <h1>Modernizing America's Pastime</h1>
                 <button>Get Started</button>
+            </div>
+            <div className="twitter-widget">
+                <TwitterContainer />
             </div>
         </div>
     )
