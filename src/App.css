@@ -406,3 +406,28 @@ button {
     display: block;
     text-align: center;
 }
+
+/* Timer */
+
+.Timer-section {
+    background-color: rgb(45, 40, 40);
+    border: 3px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 25px;
+    margin-right: 25%;
+    margin-left: 25%;
+    color: white;
+}
+
+.timer-entire {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: larger;
+}
+
+.timer {
+    display: grid;
+    padding: 25px;
+}

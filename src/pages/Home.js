@@ -24,6 +24,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="Timer-section">
+            <h1>Countdown to Opening Day:</h1>
                 <Timer />
             </div>
             <div className="Tab-section">

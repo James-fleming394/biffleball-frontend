@@ -26,22 +26,21 @@ const Timer = () => {
 
     return (
     <div className="timer-entire">
-        <h1>Countdown to Opening Day:</h1>
         <div className='timer'>
             <h2>{days}</h2>
-            <h4>Days</h4>
+            <h4 className='time'>Days</h4>
         </div>
         <div className='timer'>
             <h2>{hours}</h2>
-            <h4>Hours</h4>
+            <h4 className='time'>Hours</h4>
         </div>
         <div className='timer'>
             <h2>{minutes}</h2>
-            <h4>Minutes</h4>
+            <h4 className='time'>Minutes</h4>
         </div>
         <div className='timer'>
             <h2>{seconds}</h2>
-            <h4>Seconds</h4>
+            <h4 className='time'>Seconds</h4>
         </div>
     </div>
     );
