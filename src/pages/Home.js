@@ -1,6 +1,7 @@
 import React from "react";
 import TwitterContainer from "../components/TwitterContainer";
 import { useNavigate } from "react-router-dom";
+import Tabs from "../components/HomeTabs";
 
 const Home = () => {
 
@@ -20,6 +21,9 @@ const Home = () => {
                 <div className="span">
                     <a onClick={registerClick}></a>
                 </div>
+            </div>
+            <div className="tabs">
+                <Tabs />
             </div>
             <div className="twitter-widget">
                 <TwitterContainer />
