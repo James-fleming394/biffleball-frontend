@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Home from './pages/Home';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -32,18 +33,22 @@ function App() {
   }, [])
 
   return (
+    <>
     <div className="App">
       <Navbar
         authenticated={authenticated}
         user={user}
-        handleLogout={handleLogout}
-      />
+        handleLogout={handleLogout} />
       <Routes>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/" element={<Home />}></Route>
       </Routes>
     </div>
+    <div>
+    <Footer />
+    </div>
+    </>
   );
 }
 
