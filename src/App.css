@@ -271,7 +271,7 @@ input[type="text"] {
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
     width: 57%;
     height: 55px;
     perspective: 1000px;
@@ -314,34 +314,4 @@ input[type="text"] {
 
 .span a:hover{
     transform: translateZ(-25px) rotateX(-90deg);
-}
-
-.what-is {
-    background-color: whitesmoke;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 0 auto;
-    width: 50%;
-    border: 2px solid black;
-}
-
-h2, h4 {
-    text-align: center;
-}
-
-.how-to {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}  
-
-.how-section {
-    background-color: whitesmoke;
-    padding: 10px;
-    margin: 0 auto;
-    width: 30%;
-    border: 2px solid black;
 }
