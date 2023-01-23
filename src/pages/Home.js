@@ -2,6 +2,7 @@ import React from "react";
 import TwitterContainer from "../components/TwitterContainer";
 import { useNavigate } from "react-router-dom";
 import Tabs from "../components/HomeTabs";
+import Timer from "../components/Timer";
 
 const Home = () => {
 
