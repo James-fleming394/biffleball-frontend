@@ -34,38 +34,33 @@ const Tabs = () => {
         <div
         className={toggleState === 1 ? "content  active-content" : "content"}
         >
-        <h2>Content 1</h2>
+        <h2>What is BiffleBall?</h2>
         <hr />
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
+        BiffleBall is a Survivor-Pool style competition designed and created specifically for Baseball. Although we love the sport, Baseball being 162 games over 5 months makes it hard for the average fan to stay invested, especially if their team is out of it by mid-summer. BiffleBall provides a way for fans of the game to stay connected and always have a rooting interest regardless of individual team success.
         </p>
         </div>
 
         <div
         className={toggleState === 2 ? "content  active-content" : "content"}
         >
-        <h2>Content 2</h2>
+        <h2>How Do I Play?</h2>
         <hr />
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            voluptatum qui adipisci.
+        Each week (Monday-Sunday) you select a team and get 1 point for every win that team has during the week. You can only use a team once per season (no repeats) and overall win % or total losses have no bearings on your final score. All wins are worth 1 point regardless of innings played, strength of team, etc, and whichever user has the most total wins after the season wins the coveted BiffleBall Belt.
+        <br></br>
+        <br></br>
+        Do you pick a team who plays 7 games during that week? Pick the team who Vegas has favored the most? The hottest team in the league? Avoid the team who is playing outdoors with rain in the forecast? The strategies are endless...
         </p>
         </div>
 
         <div
         className={toggleState === 3 ? "content  active-content" : "content"}
         >
-        <h2>Content 3</h2>
+        <h2>Entry Fee & Prizes</h2>
         <hr />
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
+            The entry fee to join our BiffleBall community and play for the incredible prizes is $150.00 per season.  Our champion is awarded roughly 75% of the overall pot, while second place is awarded the remaining 25%.  The champion is also awarded an amazing BiffleBelt championship belt, which they keep through the off season and entire next season!
         </p>
         </div>
     </div>
