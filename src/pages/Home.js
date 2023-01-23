@@ -23,6 +23,9 @@ const Home = () => {
                     <a onClick={registerClick}></a>
                 </div>
             </div>
+            <div className="Timer-section">
+                <Timer />
+            </div>
             <div className="Tab-section">
                 <Tabs />
             </div>
