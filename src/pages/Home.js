@@ -22,7 +22,7 @@ const Home = () => {
                     <a onClick={registerClick}></a>
                 </div>
             </div>
-            <div className="tabs">
+            <div className="Tab-section">
                 <Tabs />
             </div>
             <div className="twitter-widget">
