@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Timer = () => {
     const [days, setDays] = useState(0);
@@ -24,6 +25,12 @@ const Timer = () => {
     return () => clearInterval(interval);
 }, []);
 
+let navigate = useNavigate();
+
+    const registerClick = () => {
+        navigate("/register")
+    }
+
     return (
     <div className="timer-entire">
         <div className='timer'>
@@ -41,6 +48,9 @@ const Timer = () => {
         <div className='timer'>
             <h2>{seconds}</h2>
             <h4 className='time'>Seconds</h4>
+        </div>
+        <div className="span">
+            <a onClick={registerClick}></a>
         </div>
     </div>
     );

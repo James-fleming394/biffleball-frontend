@@ -6,12 +6,6 @@ import Timer from "../components/Timer";
 
 const Home = () => {
 
-    let navigate = useNavigate();
-
-    const registerClick = () => {
-        navigate("/register")
-    }
-
     return (
         <div className="home">
             <div className="logo-home">
@@ -19,9 +13,6 @@ const Home = () => {
             </div>
             <div className="welcome">
                 <h1>Modernizing America's Pastime</h1>
-                <div className="span">
-                    <a onClick={registerClick}></a>
-                </div>
             </div>
             <div className="Timer-section">
             <h1>Countdown to Opening Day:</h1>
@@ -30,9 +21,9 @@ const Home = () => {
             <div className="Tab-section">
                 <Tabs />
             </div>
-            <div className="twitter-widget">
+            {/* <div className="twitter-widget">
                 <TwitterContainer />
-            </div>
+            </div> */}
         </div>
     )
 }
