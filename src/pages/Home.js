@@ -1,6 +1,6 @@
 import React from "react";
 import TwitterContainer from "../components/TwitterContainer";
-import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
 import Tabs from "../components/HomeTabs";
 import Timer from "../components/Timer";
 
@@ -18,12 +18,15 @@ const Home = () => {
             <h1>Countdown to Opening Day:</h1>
                 <Timer />
             </div>
+            <div className="button-section">
+                <Button />
+            </div>
             <div className="Tab-section">
                 <Tabs />
             </div>
-            {/* <div className="twitter-widget">
+            <div className="twitter-widget">
                 <TwitterContainer />
-            </div> */}
+            </div>
         </div>
     )
 }

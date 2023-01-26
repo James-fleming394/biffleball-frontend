@@ -49,9 +49,6 @@ let navigate = useNavigate();
             <h2>{seconds}</h2>
             <h4 className='time'>Seconds</h4>
         </div>
-        <div className="span">
-            <a onClick={registerClick}></a>
-        </div>
     </div>
     );
 };

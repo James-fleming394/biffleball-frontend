@@ -238,7 +238,7 @@ input[type="text"] {
 /* Twitter Container */
 
 .twitterContainer {
-    width: 25%;
+    width: 100%;
 }
 
 /* Home Page */
@@ -433,14 +433,14 @@ button {
 /* Timer */
 
 .Timer-section {
-    background-color: rgb(45, 40, 40);
-    border: 3px solid white;
-    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding-top: 25px;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-left: 25px;
+    margin-right: 25px;
     color: white;
+    border-radius: 10px;
+    opacity: 95%;
 }
 
 .timer-entire {
@@ -453,6 +453,11 @@ button {
 .timer {
     display: grid;
     padding: 25px;
+    color: red;
+}
+
+h1, h2 {
+    font-size: xxx-large;
 }
 
 /* Footer */
