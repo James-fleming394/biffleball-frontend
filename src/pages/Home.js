@@ -3,6 +3,7 @@ import TwitterContainer from "../components/TwitterContainer";
 import Button from "../components/Button";
 import Tabs from "../components/HomeTabs";
 import Timer from "../components/Timer";
+import Gallery from "../components/Gallery";
 
 const Home = () => {
 
