@@ -595,3 +595,29 @@ footer {
     top: 170%;
     left: 50%;
 }
+
+/* Rules Page */ 
+
+.rules {
+    background-color: rgb(77, 72, 72);
+    color: white;
+}
+
+.rules-title {
+    background-color: #000;
+}
+
+.rules-closer {
+    display: flex;
+    justify-content: start;
+}
+
+.rulesh2 {
+    font-size:x-large;
+    color: darkorange;
+}
+
+.rules-area {
+    background-color: whitesmoke;
+    color: black;
+}
