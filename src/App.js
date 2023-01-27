@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Rules from './pages/Rules';
+import Community from './pages/Community';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/community" element={<Community />}></Route>
         <Route path="/rules" element={<Rules />}></Route>
       </Routes>
     </div>
