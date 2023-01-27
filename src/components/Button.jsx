@@ -13,7 +13,7 @@ const Button = () => {
             <button className="cool" onClick={registerClick}>
                 Don't Miss Out!  
                 <br></br>
-                Join the Community Now!
+                Click to Join the Community Now!
             </button>
         </div>
     )

@@ -484,8 +484,8 @@ footer {
     padding: 30px;
 }
 
-.cool, .cool::after {
-    width: 350px;
+.cool, .cool:after {
+    width: 400px;
     height: 80px;
     font-size: 20px;
     background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
@@ -498,7 +498,7 @@ footer {
     cursor: pointer;
 }
 
-.cool::after {
+.cool:after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -510,7 +510,7 @@ footer {
     clip-path: var(--slice-0);
 }
 
-.cool:hover::after {
+.cool:hover {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
