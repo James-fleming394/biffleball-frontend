@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import Rules from './pages/Rules';
 import Community from './pages/Community';
+import Submit from './pages/Submit';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/submit-pick" element={<Submit />}></Route>
         <Route path="/community" element={<Community />}></Route>
         <Route path="/rules" element={<Rules />}></Route>
       </Routes>

@@ -12,7 +12,6 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formState);
         setFormState(initialState);
     };
 
