@@ -694,3 +694,47 @@ footer {
     margin-bottom: 10px;
     border-radius: 0%;
 }
+
+/* Community Page */
+
+.community {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.category {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    height: 150px;
+    position: relative;
+    margin-top: 30px;
+    border: 5px black outset;
+    cursor: pointer;
+}
+
+.category-image {
+    width: 95%;
+    height: 90%;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.title-category {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.communityh2 {
+    font-size: xx-large;
+}
+
