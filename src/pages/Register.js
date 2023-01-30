@@ -35,6 +35,7 @@ const Register = () => {
                         </div>
                     <div className="hello">
                         <h2>Register</h2>
+                        <p>Sign up and play!</p>
                     </div>
                     <form onSubmit={handleSubmit}>
                         <div className="input_text">
@@ -49,7 +50,7 @@ const Register = () => {
                         </div>
                         <div className="input_text">
                                 <input 
-                                id="username"
+                                className="username"
                                 type="text"
                                 placeholder="Enter Username"
                                 name="username"
