@@ -791,3 +791,15 @@ td {
     text-align: center;
     padding-bottom: 20px;
 }
+
+/* Stats */
+
+.teamsused-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.teams-used {
+    padding-bottom: 5px;
+}

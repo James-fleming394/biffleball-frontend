@@ -14,6 +14,7 @@ import Standings from './pages/Standings';
 import Annoucements from './pages/Annoucement';
 import Blog from './pages/Blog';
 import Questions from './pages/Questions';
+import Stats from './pages/Stats';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         <Route path="/register" element={<Register />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/standings" element={<Standings />}></Route>
+        <Route path="/stats" element={<Stats />}></Route>
         <Route path="/submit-pick" element={<Submit />}></Route>
         <Route path="/community" element={<Community />}></Route>
         <Route path="/community-annoucements" element={<Annoucements />}></Route>
