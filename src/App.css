@@ -803,3 +803,9 @@ td {
 .teams-used {
     padding-bottom: 5px;
 }
+
+.waa-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
