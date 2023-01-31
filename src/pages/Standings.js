@@ -61,8 +61,10 @@ const Standings = () => {
                     )
                 })}
             </table>
-            <div className="standings-info">
+        </div>
+        <div className="standings-info">
                 <h3>Understanding the Stats</h3>
+                <br></br>
                 <h4>WAA - Wins Above Average</h4>
                 <h5>Your standardized win total relative to those who have used the same teams as you alreadys</h5>
                 <br></br>
@@ -72,7 +74,6 @@ const Standings = () => {
                 <h4>SOTU - Strength of Teams Used</h4>
                 <h5>Combined record of all your teams selected. The lower your SOTU the worse teams you have used so far</h5>
             </div>
-        </div>
         </>
     )
 }

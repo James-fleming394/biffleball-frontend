@@ -10,21 +10,21 @@ const Community = () => {
         <div className="community">
             <h1>Community</h1>
         </div>
-        <div className="category">
+        <div className="category" onClick={() => navigate("/community-announcements")}>
             <div className="title-category">
                 <h2 className="communityh2">Announcements</h2>
             </div>
             <img className="category-image" 
             src="https://c1.wallpaperflare.com/preview/501/991/764/baseball-crowd-game-lights.jpg" />
         </div>
-        <div className="category">
+        <div className="category" onClick={() => navigate("/community-blog")}>
             <div className="title-category">
                 <h2 className="communityh2">Blog</h2>
             </div>
             <img className="category-image" 
             src="https://c1.wallpaperflare.com/preview/377/306/543/baseball-field-base-ball-scenery-lights.jpg" />
         </div>
-        <div className="category">
+        <div className="category" onClick={() => navigate("/community-questions")}>
             <div className="title-category">
                 <h2 className="communityh2">Questions</h2>
             </div>

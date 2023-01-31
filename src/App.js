@@ -11,6 +11,9 @@ import Rules from './pages/Rules';
 import Community from './pages/Community';
 import Submit from './pages/Submit';
 import Standings from './pages/Standings';
+import Annoucements from './pages/Annoucement';
+import Blog from './pages/Blog';
+import Questions from './pages/Questions';
 
 
 function App() {
@@ -50,6 +53,9 @@ function App() {
         <Route path="/standings" element={<Standings />}></Route>
         <Route path="/submit-pick" element={<Submit />}></Route>
         <Route path="/community" element={<Community />}></Route>
+        <Route path="/community-annoucements" element={<Annoucements />}></Route>
+        <Route path="/community-blog" element={<Blog />}></Route>
+        <Route path="/community-questions" element={<Questions />}></Route>
         <Route path="/rules" element={<Rules />}></Route>
       </Routes>
     </div>
