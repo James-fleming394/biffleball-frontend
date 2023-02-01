@@ -809,3 +809,8 @@ td {
     overflow-x: auto;
     white-space: nowrap;
 }
+
+.stats-teamsused {
+    margin: 40px;
+    padding-bottom: 50px;
+}
