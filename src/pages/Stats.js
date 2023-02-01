@@ -125,6 +125,7 @@ const Stats = () => {
         <div className="stats-teamsused">
             <h2 className="teams-used">Teams Used by Individual</h2>
             <table className="teamsused-table">
+            <tbody>
                 <tr>
                     <th>Username</th>
                     <th>Week 1</th>
@@ -153,12 +154,15 @@ const Stats = () => {
                     <th>Week 24</th>
                     <th>Week 25</th>
                 </tr>
+                </tbody>
             {dataTeamsUsed.map((val, key) => {
                 return (
+                    <tbody key={key}>
                     <tr key={key}>
                         <td>{val.username}</td>
                         <td>{val.TeamsUsed}</td>
                     </tr>
+                    </tbody>
                 )
             })}
             </table>
@@ -169,6 +173,7 @@ const Stats = () => {
         </div>
         <div className="waa-table">
             <table>
+                <tbody>
                 <tr>
                     <th>Username</th>
                     <th>Blue Jays</th>
@@ -203,12 +208,15 @@ const Stats = () => {
                     <th>Diamondbacks</th>
                     <th>All-Star Week</th>
                 </tr>
+                </tbody>
                 {dataTeamsUsed.map((val, key) => {
                     return (
+                        <tbody key={key}>
                         <tr key={key}>
                             <td>{val.username}</td>
                             <td>{val.wins}</td>
                         </tr>
+                        </tbody>
                     )
                 })}
                 {/* {WAAData.map((val, key) => {
@@ -227,6 +235,7 @@ const Stats = () => {
         </div>
         <div className="waa-table">
             <table>
+            <tbody>
             <tr>
                     <th>Username</th>
                     <th>Blue Jays</th>
@@ -261,12 +270,15 @@ const Stats = () => {
                     <th>Diamondbacks</th>
                     <th>All-Star Week</th>
                 </tr>
+                </tbody>
                 {dataTeamsUsed.map((val, key) => {
                     return (
+                        <tbody key={key}>
                         <tr key={key}>
                             <td>{val.username}</td>
                             <td>{val.wins}</td>
                         </tr>
+                        </tbody>
                     )
                 })}
             </table>
@@ -278,6 +290,7 @@ const Stats = () => {
         </div>
         <div className="sotu-table">
             <table className="waa-table">
+                <tbody>
                 <tr>
                     <th>Username</th>
                     <th>Week 1</th>
@@ -306,12 +319,15 @@ const Stats = () => {
                     <th>Week 24</th>
                     <th>Week 25</th>
                 </tr>
+                </tbody>
                 {SOTU.map((val, key) => {
                     return (
+                    <tbody key={key}>
                     <tr key={key}>
                         <td>{val.username}</td>
                         <td>{val.SOS}</td>
                     </tr>
+                    </tbody>
                     )
                 })}
             </table>
@@ -322,6 +338,7 @@ const Stats = () => {
                 <h1>Win Totals by Team</h1>
         </div>
         <table className="waa-table">
+        <tbody>
             <tr>
                 <th>Team</th>
                 <th>Week 1</th>
@@ -350,12 +367,15 @@ const Stats = () => {
                 <th>Week 24</th>
                 <th>Week 25</th>
             </tr>
+            </tbody>
             {teamRecord.map((val, key) => {
                 return (
+                    <tbody key={key}>
                     <tr key={key}>
                         <td>{val.team}</td>
                         <td>{val.wins1}</td>
                     </tr>
+                    </tbody>
                 )
             })}
         </table>

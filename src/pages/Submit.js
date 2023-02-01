@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Schedule from "../components/Schedule";
+import WeatherForcast from "../components/Weather";
 
 const Submit = () => {
 
@@ -30,6 +31,10 @@ const Submit = () => {
     }
 
     return (
+        <>
+        <div className="submit-title">
+            <h1>Submission Page</h1>
+        </div>
         <div className="submit">
             <div className="submit-pick">
                 <h2 className="sub-pick">Submit Pick</h2>
@@ -92,10 +97,11 @@ const Submit = () => {
                     </div>
                 </form>
             </div>
-            <div className="weather">
-                
-            </div>
+            {/* <div className="weather-widget">
+                <WeatherForcast />
+            </div> */}
         </div>
+        </>
     )
 }
 

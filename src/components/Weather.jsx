@@ -1,40 +1,58 @@
-import React, { useState, useEffect } from 'react';
+// import React from "react";
+// import { useState, useEffect } from "react";
 
-const WeeklyWeather = () => {
-    const [weatherData, setWeatherData] = useState([]);
+// const WeatherForcast = () => {
 
-    useEffect(() => {
-    fetch('https://api.openweathermap.org/data/2.5/forecast/daily?q=London,uk&cnt=7&appid=YOUR_API_KEY')
-        .then(response => response.json())
-        .then(data => setWeatherData(data.list));
-    }, []);
+//     const [city, setCity] = useState("");
+//     const [weatherData, setWeatherData] = useState([]);
+//     const [loading, setLoading] = useState(false);
 
-    return (
-    <div>
-        {weatherData.length > 0 && (
-        <table>
-            <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temperature (Kelvin)</th>
-                <th>Humidity (%)</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            {weatherData.map(day => (
-                <tr key={day.dt}>
-                <td>{new Date(day.dt * 1000).toLocaleDateString()}</td>
-                <td>{day.temp.day}</td>
-                <td>{day.humidity}</td>
-                <td>{day.weather[0].description}</td>
-            </tr>
-            ))}
-        </tbody>
-        </table>
-    )}
-    </div>
-);
-};
+//     useEffect(() => {
+//         if(!city) return;
 
-export default WeeklyWeather;
+//         setLoading(true);
+//         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=a7d88bd22da196dd0a55310dfe834d9b`)
+//         .then(response => response.json())
+//         .then(data => {
+//             setWeatherData(data.list);
+//             setLoading(false);
+//         });
+//     }, [city]);
+
+//     return (
+//         <div className="weather">
+//             <h2>Weather Forecast</h2>
+//             <div className="weather-input">
+//                 <input 
+//                 type="text"
+//                 value={city}
+//                 onChange={event => setCity(event.target.value)}
+//                 placeholder="Enter City Name"
+//             />
+//             {loading && <p>Loading...</p>}
+//             {weatherData.length > 0 && (
+//                 <table>
+//                     <thead>
+//                         <tr>
+//                             <th>Date</th>
+//                             <th>Temperature</th>
+//                             <th>Humidity</th>
+//                         </tr>
+//                     </thead>
+//                     <tbody>
+//                         {weatherData.map(item => {
+//                             <tr key={item.dt}>
+//                                 <td>{new Date(item.dt * 1000).toLocaleDateString()}</td>
+//                                 <td>{item.main.temp}°F</td>
+//                                 <td>{item.main.humidity}%</td>
+//                             </tr>
+//                         })}
+//                     </tbody>
+//                 </table>
+//             )}
+//             </div>
+//         </div>
+//     )
+// }
+
+// export default WeatherForcast;

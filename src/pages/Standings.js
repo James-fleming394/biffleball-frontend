@@ -36,6 +36,7 @@ const Standings = () => {
         </div>
         <div className="standings">
             <table>
+                <tbody>
                 <tr>
                     <th>Username</th>
                     <th>Wins</th>
@@ -48,8 +49,10 @@ const Standings = () => {
                         </select>
                     </th>
                 </tr>
+                </tbody>
                 {data.map((val, key) => {
                     return (
+                        <tbody key={key}>
                         <tr key={key}>
                             <td>{val.username}</td>
                             <td>{val.wins}</td>
@@ -58,6 +61,7 @@ const Standings = () => {
                             <td>{val.SOTU}</td>
                             <td>{val.Week1}</td>
                         </tr>
+                        </tbody>
                     )
                 })}
             </table>
