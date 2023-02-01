@@ -92,8 +92,8 @@ const Submit = () => {
                     </div>
                 </form>
             </div>
-            <div className="schedule">
-                <Schedule /> 
+            <div className="weather">
+                
             </div>
         </div>
     )
