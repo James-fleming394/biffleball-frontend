@@ -32,7 +32,7 @@ const Standings = () => {
         <>
         <div className="standings-title">
             <h1>BiffleBall Overall Standings</h1>
-            <h3>2023 Season</h3>
+            <h3>2023 Regular Season</h3>
         </div>
         <div className="standings">
             <table>
@@ -67,7 +67,7 @@ const Standings = () => {
             </table>
         </div>
         <div className="standings-info">
-                <h3>Understanding the Stats</h3>
+                <h3 className="stats-title">Understanding the Stats</h3>
                 <br></br>
                 <h4>WAA - Wins Above Average</h4>
                 <h5>Your standardized win total relative to those who have used the same teams as you alreadys</h5>

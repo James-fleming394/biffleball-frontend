@@ -12,6 +12,7 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        console.log(formState)
         setFormState(initialState);
     };
 
@@ -38,7 +39,6 @@ const Login = () => {
                             <h2>Sign In</h2>
                             <p>Welcome Back!</p>
                         </div>
-
                         <form onSubmit={handleSubmit}>
                             <div className="input_text">
                                 <input 

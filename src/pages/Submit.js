@@ -36,6 +36,9 @@ const Submit = () => {
             <h1>Submission Page</h1>
         </div>
         <div className="submit">
+            <div className="week-submit">
+                <img className="submit-pic" src="https://opbcpastor.files.wordpress.com/2017/07/week-1.jpg" />
+            </div>
             <div className="submit-pick">
                 <h2 className="sub-pick">Submit Pick</h2>
                 <form className="pick" onSubmit={handleSubmit}>

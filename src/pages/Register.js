@@ -1,17 +1,30 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Register = () => {
-    const initialState = {email: '', password: ''};
+    const initialState = {
+        username2: '',
+        email: '',
+        password: ''
+    };
     const [formState, setFormState] = useState(initialState);
 
     const handleChange = (event) => {
         setFormState({...formState, [event.target.id]: [event.target.value]})
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const handleSubmit = async (event) => {
+
+        let newUser = await axios.post(`http://localhost:7001/api/users/new`, formState)
+        .then((response) => {
+            return response
+        })
+        .catch((error) => {
+            console.log(error)
+        });
+
         console.log(formState);
         setFormState(initialState);
     };
@@ -38,6 +51,16 @@ const Register = () => {
                         <p>Sign up and play!</p>
                     </div>
                     <form onSubmit={handleSubmit}>
+                    <div className="input_text">
+                                <input 
+                                id="username2"
+                                type="text"
+                                placeholder="Enter Username"
+                                name="username2"
+                                onChange={handleChange}
+                                value={formState.username2}
+                                />
+                            </div>
                         <div className="input_text">
                                 <input 
                                 id="email"
@@ -48,16 +71,6 @@ const Register = () => {
                                 value={formState.email}
                                 />
                         </div>
-                        <div className="input_text">
-                                <input 
-                                className="username"
-                                type="text"
-                                placeholder="Enter Username"
-                                name="username"
-                                onChange={handleChange}
-                                value={formState.username}
-                                />
-                            </div>
                         <div className="input_text">
                                 <input 
                                 id="password"
