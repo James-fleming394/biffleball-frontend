@@ -12,7 +12,6 @@ const Footer = () => {
                 Your Ads Privacy Choices</p>
             <span><img className='footer-img' src="/img/Biffle-Small-White.png" alt="logo" /></span>
             <p>© 2020-2023, BiffleBall LLC. or its affiliates</p>
-            
         </footer>
     )
 }

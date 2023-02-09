@@ -3,9 +3,29 @@ import React from "react";
 const Stats = () => {
 
     const dataTeamsUsed = [
-        { username: "The Muffin Man", TeamsUsed: "New York Mets"},
-        { username: "AGeller", TeamsUsed: "New York Yankees"},
-        { username: "That Rance Kid", TeamsUsed: "St. Louis Cardinals"},
+        { username: "The Muffin Man", TeamsUsed: ""},
+        { username: "AGeller", TeamsUsed: ""},
+        { username: "That Rance Kid", TeamsUsed: ""},
+        { username: "Sokun", TeamsUsed: ""},
+        { username: "Sir Pony Zook Sir", TeamsUsed: ""},
+        { username: "Gricken", TeamsUsed: ""},
+        { username: "CMcTear", TeamsUsed: ""},
+        { username: "TMargolis", TeamsUsed: ""},
+        { username: "Hubbs", TeamsUsed: ""},
+        { username: "Cooksville Loudmouths", TeamsUsed: ""},
+        { username: "Smitty", TeamsUsed: ""},
+        { username: "Gratataman", TeamsUsed: ""},
+        { username: "FKelly", TeamsUsed: ""},
+        { username: "Matty2294", TeamsUsed: ""},
+        { username: "PGroft", TeamsUsed: ""},
+        { username: "Eric Adams Wainwright", TeamsUsed: ""},
+        { username: "AdamsEaton", TeamsUsed: ""},
+        { username: "CThompson", TeamsUsed: ""},
+        { username: "Rjovellanos", TeamsUsed: ""},
+        { username: "Hshore", TeamsUsed: ""},
+        { username: "JesseCohen1994", TeamsUsed: ""},
+        { username: "Bshore", TeamsUsed: ""},
+        { username: "Euphoria", TeamsUsed: ""},
         { username: "Team Average Wins"},
     ];
 
@@ -78,9 +98,29 @@ const Stats = () => {
     ];
 
     const SOTU = [
-        { username: "The Muffin Man", SOS: 0.0},
-        { username: "AGeller", SOS: 0.0 },
-        { username: "That Rance Kid", SOS: 0.0 },
+        { username: "The Muffin Man", SOS: 0.0, SOTU: 0.0},
+        { username: "AGeller", SOS: 0.0, SOTU: 0.0 },
+        { username: "That Rance Kid", SOS: 0.0, SOTU: 0.0 },
+        { username: "Sokun", SOS: 0.0, SOTU: 0.0 },
+        { username: "Sir Pony Zook Sir", SOS: 0.0, SOTU: 0.0 },
+        { username: "Gricken", SOS: 0.0, SOTU: 0.0 },
+        { username: "CMcTear", SOS: 0.0, SOTU: 0.0 },
+        { username: "TMargolis", SOS: 0.0, SOTU: 0.0 },
+        { username: "Hubbs", SOS: 0.0, SOTU: 0.0 },
+        { username: "Cooksville Loudmouths", SOS: 0.0, SOTU: 0.0 },
+        { username: "Smitty", SOS: 0.0, SOTU: 0.0 },
+        { username: "Gratataman", SOS: 0.0, SOTU: 0.0 },
+        { username: "FKelly", SOS: 0.0, SOTU: 0.0 },
+        { username: "Matty2294", SOS: 0.0, SOTU: 0.0 },
+        { username: "Eric Adams Wainwright", SOS: 0.0, SOTU: 0.0 },
+        { username: "PGroft", SOS: 0.0, SOTU: 0.0 },
+        { username: "AdamsEaton", SOS: 0.0, SOTU: 0.0 },
+        { username: "CThompson", SOS: 0.0, SOTU: 0.0 },
+        { username: "Rjovellanos", SOS: 0.0, SOTU: 0.0 },
+        { username: "HShore", SOS: 0.0, SOTU: 0.0 },
+        { username: "JesseCohen1994", SOS: 0.0, SOTU: 0.0 },
+        { username: "BShore", SOS: 0.0, SOTU: 0.0 },
+        { username: "Euphoria", SOS: 0.0, SOTU: 0.0 },
     ];
 
     const teamRecord = [
@@ -219,13 +259,6 @@ const Stats = () => {
                         </tbody>
                     )
                 })}
-                {/* {WAAData.map((val, key) => {
-                    return (
-                        <tr key={key}>
-
-                        </tr>
-                    )
-                })} */}
             </table>
         </div>
         </div>
@@ -293,6 +326,7 @@ const Stats = () => {
                 <tbody>
                 <tr>
                     <th>Username</th>
+                    <th>SOTU</th>
                     <th>Week 1</th>
                     <th>Week 2</th>
                     <th>Week 3</th>
@@ -325,6 +359,7 @@ const Stats = () => {
                     <tbody key={key}>
                     <tr key={key}>
                         <td>{val.username}</td>
+                        <td>{val.SOTU}</td>
                         <td>{val.SOS}</td>
                     </tr>
                     </tbody>

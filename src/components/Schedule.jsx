@@ -1,14 +1,14 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-const Schedule = () => {
+const Schedule = (props) => {
+        
+
     return (
-        <>
-        <div className="sr-widget" data-sr-widget="us.team.mlb.schedule" data-sr-team-uid="3654"></div>
-    <script type="application/javascript" 
-    src="https://widgets.media.sportradar.com/uscommon/widgetloader" 
-    data-sr-language="en_us" 
-    async=""></script>
-    </>
+        <div className="schedule">
+            
+        </div>
     )
 }
 

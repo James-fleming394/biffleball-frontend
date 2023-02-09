@@ -55,7 +55,7 @@ function App() {
         <Route path="/stats" element={<Stats />}></Route>
         <Route path="/submit-pick" element={<Submit />}></Route>
         <Route path="/community" element={<Community />}></Route>
-        <Route path="/community-annoucements" element={<Annoucements />}></Route>
+        <Route path="/community-announcements" element={<Annoucements />}></Route>
         <Route path="/community-blog" element={<Blog />}></Route>
         <Route path="/community-questions" element={<Questions />}></Route>
         <Route path="/rules" element={<Rules />}></Route>
